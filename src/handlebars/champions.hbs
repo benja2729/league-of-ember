@@ -1,0 +1,15 @@
+
+<div class="row">
+  <aside class="col-lg-3">
+    <ol>
+    {{#each content}}
+      <li>
+        {{#linkTo "champion" this}}{{name}}: {{title}}{{/linkTo}}
+      </li>
+    {{/each}}
+    </ol>
+  </aside>
+  <section class="col-lg-9">
+    {{outlet}}
+  </section>
+</div>
